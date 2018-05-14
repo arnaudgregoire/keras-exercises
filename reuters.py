@@ -60,8 +60,6 @@ validation_data=(x_val, y_val))
 
 acc = history.history['acc']
 val_acc = history.history['val_acc']
-history_dict = history.history
-epochs = range(1, len(val_acc) + 1)
 plt.plot(epochs, acc, 'bo', label='Training acc')
 plt.plot(epochs, val_acc, 'b', label='Validation acc')
 plt.title('Training and validation accuracy')
